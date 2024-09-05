@@ -1,0 +1,587 @@
+:root {
+    --white: #ffffff;
+    --milk:  rgb(230, 219, 207);
+    --black: black;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class$="flex"], [class*="sub"], 
+.nav2 div, .mid-section2 {
+    display: flex;
+}
+
+.main-section-flex {
+    flex-direction:row ;
+    width: 100%;
+}
+
+.mid-section {
+    display: flex;
+    margin-top: 50px;
+}
+
+.mid-section2 {
+    margin-top: 30px;
+}
+
+.header-box1 {
+    width: 60%;
+}
+
+.header-box2 {
+    width: 40%;
+}
+
+.box2 img, .box1, .box4 {
+    margin-top: 50px;
+}
+
+.box1 {
+    text-align: center;
+    width: 35%;
+}
+
+.box2 {
+    width: 35%;
+}
+
+.box3 {
+    width: 35%;
+    height: fit-content;
+}
+
+.box4 {
+    text-align: center;
+    width: 35%;
+}
+
+.sub1  {
+    flex-direction: row;
+    justify-content: end !important;
+}
+
+.sub2 {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.sub3 {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.box4-sub1 {
+    flex-direction: row;
+    justify-content: end;
+}
+
+.box4-sub2 {
+    justify-content: center !important;
+}
+
+.box4-sub3 {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.ham-flex {
+    position:absolute;
+    gap: 10px;
+    float: left;
+    width: fit-content;
+}
+
+.nav-flex {
+    flex-direction: column;
+    position:absolute;
+    left: 40%;
+    width: fit-content;
+    gap: 200px;
+}
+
+.img-flex {
+    gap: 70px;
+    justify-content: space-around;
+}
+
+.box5-flex {
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-flex {
+    margin: 50px auto ;
+     gap:50px;
+ }
+ 
+ .footer-text  {
+     flex-direction: column;
+     display: flex;
+     gap: 10px;
+ }
+
+ .foot-flex {
+     background-color: var(--black);
+ }
+
+ .lastsec-flex {
+    width: 100%;
+    position: relative;
+}
+
+ [class*="foot"],
+ [class^="mid"] {
+     justify-content: center;
+ }
+
+.nav2 div {
+    margin-top: 30px;
+    border: 1px solid white;
+    width: 200px;
+}
+
+p, li, select {
+    color: var(--milk);
+    font-family: var(--font-family);
+}
+
+p {
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+hr ~ p {
+    display: inline-block;
+    width: 300px;
+    text-align: start;
+    font-size: 1rem;
+}
+
+li {
+    opacity: 0.7;
+    display: inline;
+    padding:0 15px;
+    font-size: 15px;
+}
+
+.nav1  span,
+.foot-flex span  {
+    text-decoration: line-through;
+    text-decoration-color:goldenrod ;
+}
+
+h2, .nav1  span, .nav2 button {
+    color: var(--white);
+}
+
+.sub3 span, 
+.footer-text span {
+    border-bottom: 2px solid var(--black);
+}
+
+.box4-sub3 span {
+    border-bottom: 2px solid var(--black);
+ }
+
+.box4-sub2 p {
+    width: 300px;
+}
+
+.box5-flex p {
+    width: 500px;
+    text-align: center;
+ }
+
+.lastsec-flex p {
+    width: 400px;
+    position: absolute;
+    top:47%;
+    left: 30%;
+}
+
+.footer-text p {
+    width: 300px;
+}
+
+.nav2  h1 {
+    color:bisque;
+    font-size: 60px;
+    letter-spacing: 20px;
+}
+
+ .box1 h1 {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.box5-flex h1 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+ .lastsec-flex h1 {
+    letter-spacing: 2px;
+    position: absolute;
+    color: bisque;
+    top: 33%;
+    left: 30%;
+}
+
+ h2 {
+    letter-spacing: 5px;
+    display: inline-block;
+}
+
+.sub3 h2 {
+    margin-left: 50px;
+    width:3px;
+    height: 30px;
+}
+
+.nav1 h2 {
+    margin-left: 10px;
+    color: var(--white)
+}
+
+.box4-sub3 h2 {
+    align-self: self-end;
+}
+
+.foot-flex h2 {
+    color: var(--white);
+    text-align: center;
+}
+
+hr ~ p, h2, .box4-sub2 p,
+.footer-text p {
+    color: var(--black);
+}
+
+.sub1 hr {
+    height: 3px;
+    width: 40px;
+    margin-top: 20px;
+    margin-right:20px;
+}
+
+.sub2 hr {
+    background-color: var(--black);
+    display: inline-block;
+    width: 9vw;
+    height: 3px;
+    margin-top:20px  ;
+}
+
+.sub3 hr {
+    margin-left: 50px;
+    width:3px;
+    height: 30px;
+    background-color: var(--black);
+}
+
+.box4-sub1 hr{
+    background-color: var(--black);
+    width: 10vw;
+    height: 3px;
+    margin-top:10px ;
+    display: inline-block;
+}
+
+.box4-sub2 hr {
+    height: 3px;
+    width: 40px;
+    margin-top: 20px;
+    margin-right:20px;
+    background-color: var(--black);
+}
+
+.box4-sub3 hr {
+    margin-left: 50px;
+    width:3px;
+    height: 30px;
+    background-color: var(--black);
+    align-self: self-end;
+    margin-right: 20px;
+}
+
+.box5-flex hr {
+    width: 30px;
+    height: 3px;
+    background-color: var(--black);
+}
+
+
+[class^="header"] img,
+.box2 img, .box5-flex {
+    width: 100%;
+}
+
+.header-box2 img {
+     height: 105%;
+}
+
+.material-icons {
+    color: aliceblue;
+    font-weight: 300;
+}
+
+.box3 img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.img-flex img {
+    width: 200px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+ }
+
+.img1-flex,
+.img3-flex ,
+.img2-flex {
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+
+.img2-flex img, 
+.img3-flex img {
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+}
+
+.lastsec-flex img {
+    width: 100%;
+}
+
+.img-flex svg {
+    width: 50px;
+    position: absolute;
+    top:40%;
+    right: 70px;
+    background-color: bisque;
+    border-radius: 30px;
+}
+
+.nav2 button, 
+.footer-text button {
+    background-color: inherit;
+    font-size: small;
+    border: none;
+    margin-left: 40px;
+    letter-spacing: 2px;
+}
+
+.footer-text button {
+    font-size: small;
+    text-align: left;
+    margin-left: 0;
+}
+
+.sub3 button {
+    margin-left: 20px;
+    letter-spacing: 2px;
+    border: none;
+    background-color: inherit;
+}
+
+.box4-sub3 button {
+    letter-spacing: 2px;
+    border: none;
+    background-color: inherit;
+}
+
+.play-icon ,
+[class^="header"] {
+     position: relative;
+}
+
+ .info {
+    right:0;
+    position: absolute;
+    opacity: 0.7;
+    gap: 10px;
+    display: flex;
+}
+
+select {
+   background-color: inherit;
+   border: none;
+}
+
+
+@media screen and (max-width:900px) {
+
+.sub3 {
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.box4-sub3 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-flex {
+    gap:150px;
+}
+
+.box1 {
+    text-align: center;
+    width: 35%;
+    margin-top: 25px;
+}
+
+li {
+   display: none;
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+.img-flex{
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+   height: 100% !important;
+}
+
+.footer-flex {
+   flex-direction: column-reverse;
+   align-items: center;
+   text-align: center;
+}
+
+.nav-flex {
+    gap:80px;
+}
+
+.mid-section {
+   flex-direction: column;
+   align-items: center;
+}
+
+.mid-section2 {
+   flex-direction: column-reverse;
+   align-items: center;
+}
+
+.box4-sub1, .sub2 {
+   justify-content: center;
+}
+
+.box1, .box4 {
+   width: 100%;
+   text-align: center;
+}
+
+.box3, .box2 {
+   width: 50%;
+}
+
+.box4 p {
+   text-align: center;
+   width: 100%;
+}
+
+.sub1 p {
+   text-align: center;
+   width: 100%;
+}
+
+.box5-flex p {
+   width: 400px;
+}
+
+.lastsec-flex p {
+   width: 300px;
+   font-size: small;
+}
+
+.box5-flex h1,
+.sub2 h1 {
+   font-size: x-large;
+}
+
+.box2 img, .box3 img {
+   width: 100%;
+}
+
+.nav2 h1 {
+   font-size: xx-large;
+   letter-spacing: 3px;
+}
+        
+.lastsec-flex h1 {
+    font-size: large;
+}
+
+.footer-text button {
+    text-align: center;
+}
+
+.nav2 button {
+    margin-left: 20px;
+    font-size: x-small;
+}
+
+.nav2 div {
+    width: 150px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.nav2 svg {
+    width: 20px;
+}
+
+}
+
+@media screen and (max-width:500px) {
+    .nav2 div {
+        margin-top: 10px;
+    }
+
+    .lastsec-flex h1 {
+        top: 25%;
+        left:10% ;
+     }
+
+     .nav2 h1 {
+        font-size: x-large;
+     }
+
+     .nav1 h2 {
+        font-size: larger;
+     }
+
+     .box5-flex p {
+        width: 300px;
+     }
+
+     .lastsec-flex p {
+        left:10% ;
+     }
+
+     .footer-img img {
+        width: 100%;
+    }
+
+}
+        
+    
